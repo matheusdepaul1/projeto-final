@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site do matheus</title>
+    <title>Cine&Séries - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>projeto-final</h1>
+        <p>bem vindo aos melhores filmes e series</p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 1">
+                <h3>alice do pais das maravilhas</h3>
+                <p>Aventura, Ação</p>
+                <p>2010</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 2">
+                <h3>filho protegido</h3>
+                <p>Drama, Suspense</p>
+                <p>2019</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Série 1">
+                <h3>stranger things</h3>
+                <p>ação</p>
+                <p>4 temporada</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cine&Séries. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
